@@ -1,0 +1,6 @@
+{
+  "app.name": "密碼庫",
+  "app.summary": "加密儲存登入資訊並限次分享",
+  "app.description": "由 Blinko 宿主加密儲存登入資訊，只在需要時顯示，並可建立會過期、限制檢視次數的分享連結。",
+  "vault.open": "密碼庫"
+}

@@ -1,0 +1,7 @@
+{
+  "app.name": "Vault",
+  "app.summary": "Encrypted logins with limited-view sharing",
+  "app.description": "Keep logins encrypted by the Blinko host, reveal them only when needed, and create expiring limited-view share links.",
+  "vault.open": "Vault"
+}
+
