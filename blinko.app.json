@@ -14,6 +14,6 @@
   "oauth": { "redirectUris": [] },
   "dataTypes": [],
   "commands": [],
-  "contributes": { "items": [{ "id": "vault.sidebar", "kind": "view", "surface": "sidebar", "handler": "vault.workspace", "viewId": "vault.workspace", "icon": "app", "titleKey": "vault.open", "group": "tools", "order": 48 }] },
+  "contributes": { "items": [{ "id": "vault.sidebar", "kind": "view", "surface": "sidebar", "handler": "vault.workspace", "viewId": "vault.workspace", "icon": "tabler:lock", "titleKey": "vault.open", "group": "tools", "order": 48 }] },
   "activationEvents": []
 }
