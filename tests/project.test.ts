@@ -2,11 +2,11 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { parseExtensionManifest } from "../../../packages/cli/dist/sdk/index.js";
+import { parseExtensionManifest } from "@blinko-cloud/cli/sdk";
 
 const root=resolve(import.meta.dirname,"..");
-const blinko=resolve(root,"../../packages/cli/dist/blinko.mjs");
-const run=(command:"validate"|"build")=>execFileSync(process.execPath,[blinko,"extension",command,"."],{cwd:root,encoding:"utf8"});
+const blinko=resolve(root,"node_modules/.bin/blinko");
+const run=(command:"validate"|"build")=>execFileSync(blinko,["extension",command,"."],{cwd:root,encoding:"utf8"});
 
 describe("Blinko Vault App",()=>{
   it("declares only host-owned secret capabilities",()=>{
